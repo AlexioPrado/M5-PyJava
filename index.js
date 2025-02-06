@@ -6,7 +6,7 @@ FIND THEM KARIM
 */
 
 /*
-The const variable system is similar to the HTML system.
+The const variable system is similar to the HTML ID system.
 See the html file for more info
 */
 
@@ -80,6 +80,7 @@ b2b.onclick = function oneFive(){
     }
 }
 
+//NEED TO FINISH---------------------------------------------------------------------------------------------------------------------
 //2C
 const u2c = document.getElementById('U2C');
 const b2c = document.getElementById('B2C');
