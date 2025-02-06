@@ -1,22 +1,35 @@
 
+# PYTHON ERROR CODE FORM
+# THERE ARE THREE ERRORS ON THIS FILE
+# FIND THEM KARIM
+
 
 # 1. If-Else Statements
 
-# A. Even/Odd
+# A. Even/Odd --------------------------------------------------------
+print('1A: Checks input if its even or odd')
 num = int(input('Enter number: '))
 if num % 2 == 0:
     print('Number is even')
 else:
     print('Number is odd')
 
-# B. Voting
+input('\nEnter to continue: ')
+print()
+
+# B. Voting ----------------------------------------------------------
+print('1B: Input an age and see if your eligible to vote.')
 age = int(input('Enter your age: '))
 if age <= 18:
     print('You are not eligible to vote.')
 else:
     print('You are eligible to vote')
 
-# C. Positive/Negative/Zero
+input('\nEnter to continue: ')
+print()
+
+# C. Positive/Negative/Zero ------------------------------------------
+print('1C: Checks input if number is positive, negative, or zero')
 integer = int(input('Enter a number: '))
 if integer == 0:
     print('Number is zero.')
@@ -27,34 +40,54 @@ elif integer > 0:
 else:
     print('Input is not a number. I\'m very dissapointed in you.')
 
+input('\nEnter to continue: ')
+print()
+
 # 2. For/While Loops
 
-# A. Numbers 1-10
-for i in range(1,11,1):
+# A. Numbers 1-10 ----------------------------------------------------
+print('2A: Prints numbers 1 to 10')
+for i in range(0,11,1):
     print(i)
 
-# B. Numbers 1-5
+input('\nEnter to continue: ')
+print()
+
+# B. Numbers 1-5 -----------------------------------------------------
+print('2B: Prints numbers from 1 to 5')
 i = 1
 while i < 6:
     print(i)
     i += 1
 
-# C. Factorial Loop
+input('\nEnter to continue: ')
+print()
+
+# C. Factorial Loop --------------------------------------------------
+print('2C: Factorials')
 x = int(input('Input a number: '))
 for i in range(1,x):
     x *= i
 print(x)
 
+input('\nEnter to continue: ')
+print()
+
 # 3. Functions and Scope
 
-# A. Greeting
+# A. Greeting --------------------------------------------------------
+print('3A: Greeting')
 name = input('Enter your name: ')
 def greeting(name1):
-    print('Hello my esteemed guest, ' + name1)
+    print('Hello my esteemed guest, ' + name1 + '.')
     print('If your name wasn\'t Karim, why are you here...')
 greeting(name)
 
-# B. Even/Odd
+input('\nEnter to continue: ')
+print()
+
+# B. Even/Odd --------------------------------------------------------
+print('3B: Function Even/Odd')
 funcNum = input('Input a number: ')
 def evenOdd(number):
     if number % 2 == 0:
@@ -63,35 +96,54 @@ def evenOdd(number):
         print('Number is odd.')
 evenOdd(int(funcNum))
 
-# C. Vowel/Strings
+input('\nEnter to continue: ')
+print()
+
+# C. Vowel/Strings ---------------------------------------------------
+print('3C: Vowel Checker')
 userString = input('Enter a string: ')
 def vowelChecker(string):
     string = list(string)
     vowelNum = 0
     for i in range(len(string)):
-        if string[i] in 'aeiouAEIOU':
+        if string[i] in 'aiouAIOU':
             vowelNum += 1
     print(vowelNum)
 vowelChecker(userString)
 
+input('\nEnter to continue: ')
+print()
+
 # 4. Arrays & Objects
 
-# A. Fruitloop
+# A. Fruitloop -------------------------------------------------------
+print('4A: Fruit List')
 fruits = ['Orange', 'Apple', 'Banana', 'Durian', 'Mango']
 for i in range(len(fruits)):
     print(fruits[i])
 
-# B. Dictionary
+input('\nEnter to continue: ')
+print()
+
+# B. Dictionary ------------------------------------------------------
+print('4B: Student Grades')
 grades = {'Angel':95 , 'Bianca':97 , 'Troy':93 , 'Marcus':87 }
 for key in grades:
     print(str(key) + ': ' + str(grades[key]))
 
-# C. Num Array
+input('\nEnter to continue: ')
+print()
+
+# C. Num Array -------------------------------------------------------
+print('4C: Array')
 arrayNum = [[10,11,15],[14,24,65],[72,12,26]]
 d = 0
 for a in range(len(arrayNum)):
     b = arrayNum[a]
     for c in range(len(b)):
         if b[c] > d:
-            d = b[c]
-print(d)
+            d += b[c]
+print(str(d) + ' is the largest number in range: ')
+print(arrayNum)
+
+print()
