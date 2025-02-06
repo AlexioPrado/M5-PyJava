@@ -143,7 +143,6 @@ for a in range(len(arrayNum)):
     for c in range(len(b)):
         if b[c] > d:
             d += b[c]
-print(str(d) + ' is the largest number in range: ')
-print(arrayNum)
+print(d)
 
 print()
