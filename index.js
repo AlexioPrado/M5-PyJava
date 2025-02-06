@@ -32,7 +32,7 @@ const r1b = document.getElementById('R1B');
 b1b.onclick = function voting(){
     let age = u1b.value;
     age = Number(age);
-    if (age < 18){
+    if (age <= 18){ // Age verification should not include 18 | age < 18
         r1b.textContent = 'You are not eligible to vote.';
     }
     else{
@@ -62,6 +62,7 @@ b1c.onclick = function numValue(){
 const b2a = document.getElementById('B2A');
 const r2a = document.getElementById('R2A');
 b2a.onclick = function oneTen(){
+    r2a.textContent = '';
     for (i = 0; i < 11; i++){
         r2a.textContent += ` ${i}`;
     }
@@ -72,6 +73,7 @@ const b2b = document.getElementById('B2B');
 const r2b = document.getElementById('R2B');
 b2b.onclick = function oneFive(){
     i = 0;
+    r2b.textContent = '';
     while (i < 6){
         r2b.textContent += ` ${i}`;
         i++
@@ -85,11 +87,11 @@ const r2c = document.getElementById('R2C');
 b2c.onclick = function factorial(){
     let num2C = u2c.value;
     num2C = Number(num2C);
-    for (i = 1; i < 5; i++){
-        num2C *= i
+    for (let  e = 1; e < num2C; e++){
+        num2C = num2C * e
     }
-    r2c.textContent = `${num2C}`
 }
+r2c.textContent = `${num2C}`
 
 //3A
 const u3a = document.getElementById('U3A');
@@ -156,3 +158,18 @@ b4b.onclick = function grades(){
 }
 
 //4C 
+const b4c = document.getElementById('B4C');
+const r4c = document.getElementById('R4C');
+b4c.onclick = function numArray(){
+    numberA = [[23,45,65],[12,65,98],[112,46,76]];
+    num4c = 0
+    for (x = 0; x < numberA.length; x++){
+        numberB = numberA[x];
+        for (y = 0; y < numberB.length; y++){
+            if (numberB[y] > num4c){
+                num4c = numberB[y];
+            }
+        }
+    }
+    r4c.textContent = 'Largest number in array: ' + num4c;
+}

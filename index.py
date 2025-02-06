@@ -103,10 +103,9 @@ print()
 print('3C: Vowel Checker')
 userString = input('Enter a string: ')
 def vowelChecker(string):
-    string = list(string)
     vowelNum = 0
-    for i in range(len(string)):
-        if string[i] in 'aiouAIOU':
+    for i in string:
+        if i in 'aiouAIOU': # Vowel Checker does not include e | if i in 'aeiouAEIOU':
             vowelNum += 1
     print(vowelNum)
 vowelChecker(userString)
@@ -142,7 +141,7 @@ for a in range(len(arrayNum)):
     b = arrayNum[a]
     for c in range(len(b)):
         if b[c] > d:
-            d += b[c]
+            d += b[c] # Number Tracker should replace, not add | d =b[c]
 print(d)
 
 print()
