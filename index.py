@@ -20,7 +20,7 @@ print()
 # B. Voting ----------------------------------------------------------
 print('1B: Input an age and see if your eligible to vote.')
 age = int(input('Enter your age: '))
-if age <= 18:
+if age < 18:
     print('You are not eligible to vote.')
 else:
     print('You are eligible to vote')
@@ -105,7 +105,7 @@ userString = input('Enter a string: ')
 def vowelChecker(string):
     vowelNum = 0
     for i in string:
-        if i in 'aiouAIOU': # Vowel Checker does not include e | if i in 'aeiouAEIOU':
+        if i in 'aiouAIOU':
             vowelNum += 1
     print(vowelNum)
 vowelChecker(userString)
@@ -141,7 +141,7 @@ for a in range(len(arrayNum)):
     b = arrayNum[a]
     for c in range(len(b)):
         if b[c] > d:
-            d += b[c] # Number Tracker should replace, not add | d =b[c]
+            d += b[c]
 print(d)
 
 print()

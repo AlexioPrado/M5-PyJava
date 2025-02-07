@@ -11,6 +11,8 @@ See the html file for more info
 */
 
 //1A
+//This challenge was meant to demonstrate if-else statements. However I needed to use a function
+//inorder for output of user's input to be displayed on the html file
 const u1a = document.getElementById('U1A');
 const b1a = document.getElementById('B1A');
 const r1a = document.getElementById('R1A');
@@ -63,7 +65,7 @@ const b2a = document.getElementById('B2A');
 const r2a = document.getElementById('R2A');
 b2a.onclick = function oneTen(){
     r2a.textContent = '';
-    for (i = 0; i < 11; i++){
+    for (i = 1; i < 11; i++){
         r2a.textContent += ` ${i}`;
     }
 }
@@ -72,7 +74,7 @@ b2a.onclick = function oneTen(){
 const b2b = document.getElementById('B2B');
 const r2b = document.getElementById('R2B');
 b2b.onclick = function oneFive(){
-    i = 0;
+    i = 1;
     r2b.textContent = '';
     while (i < 6){
         r2b.textContent += ` ${i}`;
