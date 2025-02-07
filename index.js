@@ -80,7 +80,6 @@ b2b.onclick = function oneFive(){
     }
 }
 
-//NEED TO FINISH---------------------------------------------------------------------------------------------------------------------
 //2C
 const u2c = document.getElementById('U2C');
 const b2c = document.getElementById('B2C');
@@ -88,10 +87,11 @@ const r2c = document.getElementById('R2C');
 b2c.onclick = function factorial(){
     let userNum = u2c.value;
     userNum = Number(userNum);
-    for (let  e = 1; e < userNum; e++){
-        userNum *= e
+    let resultNum = userNum;
+    for (let  i = 1; i < userNum; i++){
+        resultNum *= i
     }
-    r2c.textContent = `${userNum}`
+    r2c.textContent = `${resultNum}`
 }
 
 
